@@ -1,5 +1,5 @@
 /*
- * Course: TCSS143 – Fundamentals of Object-Oriented Programming Autumn 2014
+ * Course: TCSS143 Fundamentals of Object-Oriented Programming Autumn 2014
  * File Name: Assign1_rev2.java
  * Assignment: 1
  * Due Date: September 30, 2014
