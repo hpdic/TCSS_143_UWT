@@ -1,7 +1,7 @@
 /*
 * 
 * LostPuppy.java
-* TCSS 143 – Autumn 2014
+* TCSS 143 - Autumn 2014
 * Assignment 3
 *
 */
