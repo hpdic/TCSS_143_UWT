@@ -66,7 +66,7 @@ public class LostPuppy {
                    {
                         flag = false;
                    }  
-                   return flag;
+                return flag;
         }
         /**
           * Checks if puppy is in specfic room/floor combination
@@ -81,7 +81,7 @@ public class LostPuppy {
                    {
                         flag = true;
                    } 
-                   return flag;
+                return flag;
         }
         /**
           * checks if guess is valid (in array)
@@ -97,7 +97,13 @@ public class LostPuppy {
                    {
                         flag = true;
                    }
-                   return flag;       
+                   
+                // DFZ: Need to check lower bounds as well:
+                if (0 > theGussedFloor || 0 > theGussedRoom) {
+                        flag = false;
+                }
+                
+                return flag;       
         } 
         /**
           * returns # of floors(rows)
@@ -127,7 +133,8 @@ public class LostPuppy {
                 boolean flag = false;
                 if(myHidingPlaces[theGussedFloor][theGussedRoom] == ' ') {
                         myHidingPlaces[theGussedFloor][theGussedRoom] = thePlayer;
-                } else if(myHidingPlaces[theGussedFloor][theGussedRoom] == 'P') {
+                } 
+                else if(myHidingPlaces[theGussedFloor][theGussedRoom] == 'P') {
                         flag = true;
                         this.myWinner = thePlayer;
                         this.myFound = true;                        
