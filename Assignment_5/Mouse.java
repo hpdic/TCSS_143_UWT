@@ -26,7 +26,7 @@ public class Mouse extends AbstractCritter {
      */
     private int myCount;
     /**
-     * @field myLastDirection - int - holds number of moves b4 direction changes
+     * @field myZigDirection - int - holds number of moves b4 direction changes
      */
     private int myZigDirection;
     /**

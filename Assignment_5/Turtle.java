@@ -46,12 +46,12 @@ public class Turtle extends AbstractCritter {
      */
     public int getMove(CritterInfo theInfo) {
         Random rand = new Random();
-        boolean random_2 = false;
-        int random_1 = 0;
+        int random_1 = rand.nextInt(4); // DFZ: need to make this random
         int randomKeeper_2 = rand.nextInt(2) + 1; // 1,2
-        int randomKeeper_1 = rand.nextInt(4); // 0,1,2,3
+        // int randomKeeper_1 = rand.nextInt(4); // 0,1,2,3
         myTotalMoves++;
         if ((myTotalMoves % 3) == 0) {
+            boolean random_2;
             // determines random boolean
             if (randomKeeper_2 == 1) {
                 random_2 = false;
@@ -59,7 +59,7 @@ public class Turtle extends AbstractCritter {
                 random_2 = true;
             }
             // determines random direction
-            if (random_2 = false) {
+            if (false == random_2) { // DFZ: = should be ==
                 if (random_1 == 0) {
                     myDirection = NORTH;
                 } else if (random_1 == 1) {
