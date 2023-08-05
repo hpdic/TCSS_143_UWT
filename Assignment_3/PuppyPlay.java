@@ -36,7 +36,7 @@ public class PuppyPlay{
     char[] players = {'1', '2'};
     int playerIndex;
     boolean found = false;
-    final Random rand = new Random();
+    Random rand = new Random();
     
     do {
       System.out.print("To find the puppy, we need to know:\n"
@@ -82,6 +82,8 @@ public class PuppyPlay{
       System.out.println("Great job player " + players[playerIndex] +"!");
       System.out.println("Would you like to find another puppy [Y/N]? ");
     } while (s.nextLine().equalsIgnoreCase("Y"));
+
+    s.close();
   }
 }
       
