@@ -12,11 +12,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.util.Set;
 import java.util.Map;
-import java.util.Set;
+// import java.util.Set;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.Timer;
+// import javax.swing.Timer;
 
 /**
  * Class CritterFrame provides the user interface for a simple simulation
@@ -104,7 +104,7 @@ public class CritterFrame extends JFrame {
     }
     /** Initialize the starting counts of all Critters in the simulation. */
     private void setCounts() {
-        Set<Map.Entry<String, Integer>> entries = myModel.getCounts();
+        // Set<Map.Entry<String, Integer>> entries = myModel.getCounts();
         int i = 0;
         for (Map.Entry<String, Integer> entry: myModel.getCounts()) {
             myCounts[i].setText(entry.toString());
