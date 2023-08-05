@@ -36,7 +36,7 @@ public class PuppyPlay{
     char[] players = {'1', '2'};
     int playerIndex;
     boolean found = false;
-    Random rand = new Random();
+    final Random rand = new Random();
     
     do {
       System.out.print("To find the puppy, we need to know:\n"
