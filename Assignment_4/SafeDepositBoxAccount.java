@@ -1,7 +1,7 @@
 /*
 * 
 * SafeDepositBoxAccount.java
-* TCSS 143 – Autumn 2014
+* TCSS 143 - Autumn 2014
 * Assignment 4
 * Class that implements named account
 *

@@ -1,7 +1,7 @@
 /*
 * 
 * BankAccount.java
-* TCSS 143 – Autumn 2014
+* TCSS 143 - Autumn 2014
 * Assignment 4
 * Super class that implements named account and supers savingsaccount
 */
