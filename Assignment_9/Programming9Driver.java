@@ -58,6 +58,7 @@ public class Programming9Driver {
             while (line.hasNext()) {
                 myList.add(new Word(line.next()));
             }
+            line.close();
         }
         return myList;
 
