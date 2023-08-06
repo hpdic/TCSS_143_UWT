@@ -40,10 +40,12 @@ public class Book implements Comparable<Book> {
                 || (theAuthors.size() == 0)) {
             throw new IllegalArgumentException("null or empty");
         } else {
+
             this.MYAUTHORS = new ArrayList<String>();
             for (int i = 0; i < theAuthors.size(); i++) {
                 MYAUTHORS.add(i, theAuthors.get(i));
             }
+
             this.MY_TITLE = theTitle;
         }
     }

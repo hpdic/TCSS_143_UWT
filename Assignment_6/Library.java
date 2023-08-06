@@ -74,7 +74,7 @@ public class Library {
     public ArrayList<Book> findTitles(final String theTitle) {
         ArrayList<Book> sameTitle = new ArrayList<Book>();
         for (Book b : myBooks) {
-            if ((b.getTitle()).equals(theTitle)) {
+            if (0 == (b.getTitle()).compareTo(theTitle)) {
                 sameTitle.add(b);
             }
         }
